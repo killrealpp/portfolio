@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="./img/logo.svg" alt="логотип" aria-label="основное"
+                            title="перейти в Основное">
+                    </a>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#about">Обо мне</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#projects">Проекты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#experience">Опыт работы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="iam" id="about">
+            <div class="container">
+                <div class="iam__inner">
+                    <img class="iam__img" src="./img/ava.png" alt="аватар">
+                    <h1 class="iam__title">Мне 21 и меня зовут <span>Кайсаров Кирилл</span>
+                    </h1>
+                    <p class="iam__text">Я из Казани, закончил бакалавриат в Казанском национальном исследовательском
+                        техническом университете имени А. Н. Туполева — КНИТУ-КАИ по направлению «Инфокоммуникабельные
+                        технологии и системы связи». Сейчас продолжаю развиваться в области фронтенд-разработки и
+                        верстки.
+                    </p>
+                    <div class="iam__btns">
+                        <a class="iam__btn light" href="#contacts">Связь со мной</a>
+                        <a class="iam__btn dark" href="files/portfolio.pdf" download>Скачать резюме</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="stack">
+            <div class="container">
+                <div class="stack__inner">
+                    <h3 class="stack__title">Мой стэк:</h3>
+                    <div class="stack__items">
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/javascript.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/html.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/css.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/sass.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/gulp.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/vuejs-dark.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/git.svg" alt="джаваскрипт">
+                        </div>
+                        <div class="stack__item">
+                            <img class="stack__img" src="./img/figma-dark.svg" alt="джаваскрипт">
+                        </div>
+                    </div>
+                    <p class="stack__text">Использую HTML, CSS, SASS, JavaScript. Работал с Gulp для автоматизации
+                        сборки. Во фронтенде — Vue 3 (Composition и Options API). Для дизайна — Figma.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="projects__inner">
+                    <h2 class="projects__title">Проекты</h2>
+                    <div class="projects__items">
+
+                        <a class="projects__item" href="https://github.com/killrealpp/snikers" aria-label="перейти в проект 1" title="проект 1">
+                            <img class="projects__img" src="./img/pic1.png" alt="проект 1">
+                            <div class="projects-desc">
+                                <p class="projects-desc__title">VUE SNeakers</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path
+                                        d="M0.770577 1.60785C0.770756 1.33366 0.884719 1.07075 1.08744 0.876871C1.29015 0.682991 1.56505 0.573995 1.85173 0.573824L10.5214 0.573825C10.808 0.573996 11.0829 0.682992 11.2857 0.876873C11.4884 1.07075 11.6023 1.33366 11.6025 1.60785L11.6025 9.89958C11.5925 10.1675 11.4742 10.4213 11.2726 10.6076C11.071 10.7939 10.8017 10.8981 10.5214 10.8985C10.241 10.8981 9.97176 10.7939 9.77014 10.6076C9.56852 10.4213 9.45026 10.1675 9.44021 9.89958L9.44021 4.10512L1.85173 11.3628C1.64885 11.5569 1.37368 11.6659 1.08676 11.6659C0.799846 11.6659 0.524678 11.5569 0.321797 11.3628C0.118914 11.1688 0.00493742 10.9056 0.00493742 10.6312C0.00493707 10.3568 0.118914 10.0936 0.321796 9.89958L7.91027 2.64188L1.85173 2.64188C1.56505 2.64171 1.29015 2.53271 1.08744 2.33883C0.88472 2.14495 0.770756 1.88204 0.770577 1.60785Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+
+                        <a class="projects__item" href="https://github.com/killrealpp/restoraunt" aria-label="перейти в проект 2" title="проект 2">
+                            <img class="projects__img" src="./img/pic2.png" alt="проект 2">
+                            <div class="projects-desc">
+                                <p class="projects-desc__title">enjoy food</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path
+                                        d="M0.770577 1.60785C0.770756 1.33366 0.884719 1.07075 1.08744 0.876871C1.29015 0.682991 1.56505 0.573995 1.85173 0.573824L10.5214 0.573825C10.808 0.573996 11.0829 0.682992 11.2857 0.876873C11.4884 1.07075 11.6023 1.33366 11.6025 1.60785L11.6025 9.89958C11.5925 10.1675 11.4742 10.4213 11.2726 10.6076C11.071 10.7939 10.8017 10.8981 10.5214 10.8985C10.241 10.8981 9.97176 10.7939 9.77014 10.6076C9.56852 10.4213 9.45026 10.1675 9.44021 9.89958L9.44021 4.10512L1.85173 11.3628C1.64885 11.5569 1.37368 11.6659 1.08676 11.6659C0.799846 11.6659 0.524678 11.5569 0.321797 11.3628C0.118914 11.1688 0.00493742 10.9056 0.00493742 10.6312C0.00493707 10.3568 0.118914 10.0936 0.321796 9.89958L7.91027 2.64188L1.85173 2.64188C1.56505 2.64171 1.29015 2.53271 1.08744 2.33883C0.88472 2.14495 0.770756 1.88204 0.770577 1.60785Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+
+                        <a class="projects__item" href="https://github.com/killrealpp/pechi" aria-label="перейти в проект 3" title="проект 3">
+                            <img class="projects__img" src="./img/pic3.png" alt="проект 3">
+                            <div class="projects-desc">
+                                <p class="projects-desc__title">Печи и камины</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path
+                                        d="M0.770577 1.60785C0.770756 1.33366 0.884719 1.07075 1.08744 0.876871C1.29015 0.682991 1.56505 0.573995 1.85173 0.573824L10.5214 0.573825C10.808 0.573996 11.0829 0.682992 11.2857 0.876873C11.4884 1.07075 11.6023 1.33366 11.6025 1.60785L11.6025 9.89958C11.5925 10.1675 11.4742 10.4213 11.2726 10.6076C11.071 10.7939 10.8017 10.8981 10.5214 10.8985C10.241 10.8981 9.97176 10.7939 9.77014 10.6076C9.56852 10.4213 9.45026 10.1675 9.44021 9.89958L9.44021 4.10512L1.85173 11.3628C1.64885 11.5569 1.37368 11.6659 1.08676 11.6659C0.799846 11.6659 0.524678 11.5569 0.321797 11.3628C0.118914 11.1688 0.00493742 10.9056 0.00493742 10.6312C0.00493707 10.3568 0.118914 10.0936 0.321796 9.89958L7.91027 2.64188L1.85173 2.64188C1.56505 2.64171 1.29015 2.53271 1.08744 2.33883C0.88472 2.14495 0.770756 1.88204 0.770577 1.60785Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+
+                        <a class="projects__item" href="https://github.com/killrealpp/barscourse" aria-label="перейти в проект 4" title="проект 4">
+                            <img class="projects__img" src="./img/pic5.png" alt="проект 4">
+                            <div class="projects-desc">
+                                <p class="projects-desc__title">TG App</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path
+                                        d="M0.770577 1.60785C0.770756 1.33366 0.884719 1.07075 1.08744 0.876871C1.29015 0.682991 1.56505 0.573995 1.85173 0.573824L10.5214 0.573825C10.808 0.573996 11.0829 0.682992 11.2857 0.876873C11.4884 1.07075 11.6023 1.33366 11.6025 1.60785L11.6025 9.89958C11.5925 10.1675 11.4742 10.4213 11.2726 10.6076C11.071 10.7939 10.8017 10.8981 10.5214 10.8985C10.241 10.8981 9.97176 10.7939 9.77014 10.6076C9.56852 10.4213 9.45026 10.1675 9.44021 9.89958L9.44021 4.10512L1.85173 11.3628C1.64885 11.5569 1.37368 11.6659 1.08676 11.6659C0.799846 11.6659 0.524678 11.5569 0.321797 11.3628C0.118914 11.1688 0.00493742 10.9056 0.00493742 10.6312C0.00493707 10.3568 0.118914 10.0936 0.321796 9.89958L7.91027 2.64188L1.85173 2.64188C1.56505 2.64171 1.29015 2.53271 1.08744 2.33883C0.88472 2.14495 0.770756 1.88204 0.770577 1.60785Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="experience__inner">
+                    <h2 class="experience__title">Опыт работы</h2>
+                    <div class="experience__items">
+                        <div class="experience-item">
+                            <div class="experience-item__desc">
+                                <img class="experience-item__img" src="./img/laptop.svg" alt="иконка дизайна">
+                                <h3 class="experience-item__title">Разработка Telegram мини-приложения</h3>
+                            </div>
+                            <p class="experience-item__text">Работал над созданием мини-приложения для Telegram, в
+                                которое был интегрирован обучающий курс. В процессе разработки занимался реализацией
+                                функционала и обеспечением удобного взаимодействия пользователя с приложением.</p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-item__desc">
+                                <img class="experience-item__img" src="./img/design-ideas-16.svg" alt="иконка дизайна">
+                                <h3 class="experience-item__title">Верстка</h3>
+                            </div>
+                            <p class="experience-item__text">Имею опыт верстки профессиональных сайтов с акцентом на
+                                качество и адаптивность. В рамках проектов занимался реализацией кроссбраузерной
+                                верстки, оптимизацией скорости загрузки страниц и адаптацией под мобильные устройства.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div class="contact__inner">
+                    <h2 class="contact__title">Контакты</h2>
+                    <p class="contact__text">Джуниор фронтенд-разработчик с практическим опытом создания адаптивных и
+                        качественных веб-интерфейсов. Владею современными технологиями верстки и фронтенд-разработки,
+                        постоянно развиваюсь и осваиваю новые инструменты для создания удобных и эффективных решений.
+                    </p>
+                    <div class="contact__networks">
+                        <div class="contact__mail">
+                            <svg width="200" height="200" viewBox="0 0 28 28">
+                                <g fill="none">
+                                    <path fill="#367AF2"
+                                        d="M2.004 8.503V19.25A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V8.5l-11.658 5.972a.75.75 0 0 1-.684 0z" />
+                                    <path fill="url(#fluentColorMail280)"
+                                        d="M2.004 8.503V19.25A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V8.5l-11.658 5.972a.75.75 0 0 1-.684 0z" />
+                                    <path fill="url(#fluentColorMail281)"
+                                        d="M2.004 8.503V19.25A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V8.5l-11.658 5.972a.75.75 0 0 1-.684 0z" />
+                                    <path fill="url(#fluentColorMail282)" fill-opacity=".75"
+                                        d="M2.004 8.503V19.25A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V8.5l-11.658 5.972a.75.75 0 0 1-.684 0z" />
+                                    <path fill="url(#fluentColorMail283)" fill-opacity=".7"
+                                        d="M2.004 8.503V19.25A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V8.5l-11.658 5.972a.75.75 0 0 1-.684 0z" />
+                                    <path fill="url(#fluentColorMail284)"
+                                        d="M2.004 7.75A3.75 3.75 0 0 1 5.754 4H22.25A3.75 3.75 0 0 1 26 7.75v1.2l-11.658 5.972a.75.75 0 0 1-.684 0L2.004 8.953z" />
+                                    <defs>
+                                        <linearGradient id="fluentColorMail280" x1="17.5" x2="23.168" y1="10.5"
+                                            y2="23.701" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".199" stop-color="#0094F0" stop-opacity="0" />
+                                            <stop offset=".431" stop-color="#0094F0" />
+                                        </linearGradient>
+                                        <linearGradient id="fluentColorMail281" x1="10.574" x2="4.55" y1="10.026"
+                                            y2="24.154" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".191" stop-color="#0094F0" stop-opacity="0" />
+                                            <stop offset=".431" stop-color="#0094F0" />
+                                        </linearGradient>
+                                        <linearGradient id="fluentColorMail282" x1="20.329" x2="21.305" y1="17.151"
+                                            y2="24.345" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2764E7" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#2764E7" />
+                                        </linearGradient>
+                                        <linearGradient id="fluentColorMail283" x1="17.716" x2="19.496" y1="10.281"
+                                            y2="24.921" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".533" stop-color="#FF6CE8" stop-opacity="0" />
+                                            <stop offset="1" stop-color="#FF6CE8" />
+                                        </linearGradient>
+                                        <linearGradient id="fluentColorMail284" x1="9.133" x2="16.477" y1=".555"
+                                            y2="19.789" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6CE0FF" />
+                                            <stop offset=".462" stop-color="#29C3FF" />
+                                            <stop offset="1" stop-color="#4894FE" />
+                                        </linearGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                            <a class="contact__link" href="mailto:kaisarovkirill5@gmail.com">kaisarovkirill5@gmail.com</a>
+                        </div>
+                        <div class="contact__tg">
+                            <svg width="200" height="200" viewBox="0 0 256 256">
+                                <defs>
+                                    <linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#2AABEE" />
+                                        <stop offset="100%" stop-color="#229ED9" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#logosTelegram0)"
+                                    d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0Z" />
+                                <path fill="#FFF"
+                                    d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072Z" />
+                            </svg>
+                            <a class="contact__link" href="https://t.me/kaysarovv">@kaysarovv</a>
+                        </div>
+                        <div class="contact__git">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 256 256">
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="#F03C2E" rx="60" />
+                                    <g clip-path="url(#skillIconsGit0)">
+                                        <path fill="#fff"
+                                            d="m224.225 119.094l-87.319-87.319a12.869 12.869 0 0 0-14.035-2.793a12.869 12.869 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.313 15.313 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.322 15.322 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.605 15.605 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.318 15.318 0 0 1-3.326-16.704a15.297 15.297 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.216 15.216 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.813l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.88 12.88 0 0 0 2.795 4.179l87.325 87.312a12.884 12.884 0 0 0 4.177 2.793a12.888 12.888 0 0 0 9.858 0a12.884 12.884 0 0 0 4.177-2.793l86.919-86.781a12.882 12.882 0 0 0 3.776-9.109a12.876 12.876 0 0 0-3.776-9.11" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="skillIconsGit0">
+                                            <path fill="#fff" d="M28 28h200v200H28z" />
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                            <a class="contact__link" href="https://github.com/killrealpp">@killrealpp</a>
+                        </div>
+                        <div class="contact__phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 48 48">
+                                <mask id="ipSPhoneTwo0">
+                                    <g fill="none">
+                                        <path fill="#fff" stroke="#fff" stroke-width="4"
+                                            d="M39 6H9a3 3 0 0 0-3 3v30a3 3 0 0 0 3 3h30a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Z" />
+                                        <path fill="#000" stroke="#000" stroke-linejoin="round" stroke-width="3.918"
+                                            d="M19.44 14c.444 0 .854.241 1.07.63l1.496 2.695c.196.353.205.78.024 1.14L21 21s.252 2.252 2 4c1.748 1.748 4 2 4 2l2.527-1.038c.36-.18.788-.17 1.141.025l2.703 1.503c.388.216.629.625.629 1.07v3.103c0 1.58-1.468 2.721-2.965 2.216c-3.076-1.038-7.85-3.013-10.875-6.04c-3.026-3.025-5.001-7.798-6.039-10.874c-.505-1.497.636-2.965 2.216-2.965h3.103Z" />
+                                    </g>
+                                </mask>
+                                <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSPhoneTwo0)" />
+                            </svg>
+                            <a class="contact__link" href="tel:+79968533502">+7 996 853 35 02</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
