@@ -48,7 +48,7 @@ body {
 .menu__list {
     display: flex;
     align-items: center;
-    gap: 71px;
+    gap: 30px;
 }
 
 .menu__item {
@@ -120,6 +120,7 @@ body {
     border: 2px solid #fff;
     border-radius: 25px;
     padding: 15px 30px;
+    text-align: center;
     text-decoration: none;
     font-size: 22px;
     font-weight: 600;
@@ -163,6 +164,7 @@ body {
 .stack__title {
     font-size: 20px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .stack__items {
@@ -193,6 +195,7 @@ body {
 }
 
 .projects__title {
+    text-align: center;
     font-size: 35px;
     font-weight: 800;
     background: radial-gradient(circle, rgba(245, 251, 63, 0.98) 20%, rgba(252, 70, 107, 1) 100%);
@@ -255,11 +258,12 @@ body {
 }
 
 .projects-desc svg{
+    flex-shrink: 0;
     transition: all 0.3s ease;
 }
 
 .projects-desc svg:hover{
-    transform: translateY(-2px);
+    transform: rotate(45deg);
 }
 
 .experience{
