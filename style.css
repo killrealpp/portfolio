@@ -48,6 +48,19 @@
     font-display: swap;
 }
 
+:root{
+    --bg-color: rgba(0,0,0, 0.9);
+    --text-color: #fff;
+    --accent-color: #222222;
+}
+
+body.light{
+    --bg-color: #fff;
+    --text-color: rgba(0,0,0, 0.9);
+    --accent-color: rgba(255, 255, 255, 0.6)
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -63,13 +76,10 @@ body {
     line-height: 1.5;
     font-weight: 400;
     height: 100%;
-    /* overflow: hidden; */
-    color: #fff;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
-.app{
-    background-color: rgba(0,0,0, 0.9);
-}
 
 .icon{
     flex-shrink: 0;
@@ -86,7 +96,7 @@ body {
 
 
 .header {
-    background-color: #222222;
+    background-color: var(--accent-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -128,14 +138,24 @@ body {
 
 .menu__item-link {
     text-decoration: none;
-    color: #fff;
-    font-size: 15px;
+    color: var(--text-color);
+    font-size: 13px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 .menu__item-link:hover{
     color: rgba(255,255,255, 0.5)
 }
+
+.thema__btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
 
 .iam {
     padding: 120px 0 60px 0;
@@ -203,23 +223,25 @@ body {
 }
 
 .light {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.9);
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .light:hover {
     background-color: transparent;
-    color: #fff;
+    color: var(--text-color);
+    transform: scale(0.95);
 }
 
 .dark {
     background-color: transparent; 
-    color: #fff;
+    color: var(--text-color);
 }
 
 .dark:hover {
-    background-color: #fff;
-    color: rgba(0, 0, 0, 0.9);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform: scale(0.95);
 }
 
 .stack {
@@ -283,7 +305,7 @@ body {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     border-radius: 18px;
     transition: all 0.3s ease;
     border-radius: 18px;
@@ -303,6 +325,7 @@ body {
 }
 
 .projects-desc svg{
+    color: var(--text-color);
     transition: all 0.3s ease;
 }
 
@@ -386,7 +409,7 @@ body {
 }
 
 .contact{
-    background-color: #222;
+    background-color: var(--accent-color);
     padding: 60px 0 50px 0;
 }
 
@@ -444,6 +467,6 @@ body {
 } 
 
 .contact__link{
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
