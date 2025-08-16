@@ -1,13 +1,14 @@
 const CONFIG = {
     HEADER_CLASS: ".header",
     SCROLL_HOLD: 5,
+    MENU_ITEM: ".menu__item-link",
 }
 
 export const headerScroll = () => {
     let lastScroll = 0;
     const header = document.querySelector(`${CONFIG.HEADER_CLASS}`);
   
-    if (!header) return; // ПРОВЕРЯЙ НА ТО ЧТО ПЕРЕМЕННАЯ СУЩЕСТУЕТ
+    if (!header) return;
   
     window.addEventListener("scroll", () => {
       const currentScroll = window.scrollY;
@@ -23,3 +24,21 @@ export const headerScroll = () => {
       lastScroll = currentScroll;
     });
   };
+
+  export const sectionScroll = ()=>{
+    const items = document.querySelectorAll(`${CONFIG.MENU_ITEM}`)
+    items.forEach((link)=>{
+      link.addEventListener("click", e=>{
+        e.preventDefault()
+        const targetId = link.getAttribute("href")
+        const targetBlock = document.querySelector(targetId)
+        if(targetBlock){
+          const top = targetBlock.getBoundingClientRect().top + window.scrollY
+          window.scrollTo({
+            top,
+            behavior: "smooth"
+          })
+        }
+      })
+    })
+  }
