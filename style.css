@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   src: url("/fonts/Montserrat-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -77,7 +77,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial sans-serif;
   line-height: 1.5;
   font-weight: 400;
   height: 100%;
@@ -193,7 +193,7 @@ body {
 }
 
 .iam {
-  padding: 100px 0 0 0;
+  padding: 120px 0 0 0;
 }
 
 .iam__inner {
@@ -213,7 +213,7 @@ body {
   text-align: center;
   font-size: 60px;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.6;
 }
 
 .iam__title span {
@@ -520,8 +520,8 @@ body {
   background: none;
   position: relative;
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -551,6 +551,7 @@ body {
 .burger span {
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
 }
 
 .burger.active::before {
@@ -576,6 +577,10 @@ body {
   .burger {
     display: block;
     z-index: 10;
+  }
+
+  body.light-theme .burger span, .burger::before, .burger::after{
+    background-color: var(--text-color);
   }
 
   .menu {
@@ -605,7 +610,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
-    margin-right: 10px;
   }
 
   .theme__btn {

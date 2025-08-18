@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
+
   <title>Портфолио — Кайсаров Кирилл</title>
   <meta name="description" content="Личный сайт-портфолио: проекты, опыт работы, контакты." />
   <meta name="keywords" content="портфолио, frontend, разработчик, проекты, опыт работы" />
@@ -20,6 +20,12 @@
   <meta property="og:image" content="./img/image21.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://portfolio-nu-nine-mjpieg57m1.vercel.app" />
+  
+  <link rel="preload" as="image" href="./img/ava.webp" imagesrcset="./img/ava@2x.webp 2x, ./img/ava.webp 1x"
+    imagesizes="213px" type="image/webp" fetchpriority="high">
+
+  <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -28,13 +34,13 @@
       <div class="container">
         <div class="header__inner">
 
-          <button class="burger">
+          <button class="burger" aria-label="Открыть меню" title="Меню">
             <span></span>
           </button>
 
           <a class="logo" href="#">
-            <img class="logo__img" src="./img/logo1.svg" alt="логотип white" aria-label="перейти в Основное"
-              title="Основное" />
+            <img class="logo__img" src="./img/logo1.svg" width="75" height="75" alt="логотип white"
+              aria-label="перейти в Основное" title="Основное" />
           </a>
 
           <nav class="menu">
@@ -56,7 +62,7 @@
             </ul>
           </nav>
 
-          <button class="theme__btn" id="theme-toggle" type="button">
+          <button class="theme__btn" id="theme-toggle" type="button" aria-label="Сменить тему" title="Тема">
             Сменить тему
           </button>
         </div>
@@ -69,10 +75,10 @@
           <picture>
             <source srcset="./img/ava@2x.webp 2x, ./img/ava.webp 1x" type="image/webp" />
             <source srcset="./img/ava@2x.png 2x, ./img/ava.png 1x" type="image/png" />
-            <img class="iam__img" src="./img/ava.png" alt="аватар" />
+            <img class="iam__img" src="./img/ava.png" width="213" height="213" alt="аватар" fetchpriority="high"
+              loading="eager" decoding="async"/>
           </picture>
           <h1 class="iam__title">
-            Я<br />
             <span>Кайсаров Кирилл</span>
           </h1>
           <p class="iam__text">
@@ -95,46 +101,46 @@
     <div class="stack">
       <div class="container">
         <div class="stack__inner">
-          <h3 class="stack__title">Мой стэк:</h3>
+          <h2 class="stack__title">Мой стэк:</h2>
           <div class="stack__items">
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/javascript.svg" alt="javascript" />
+                <img class="stack__img" src="./img/javascript.svg" width="48" height="48" alt="javascript" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/html.svg" alt="html" />
+                <img class="stack__img" src="./img/html.svg" width="48" height="48" alt="html" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/css.svg" alt="css" />
+                <img class="stack__img" src="./img/css.svg" width="48" height="48" alt="css" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/sass.svg" alt="sass" />
+                <img class="stack__img" src="./img/sass.svg" width="48" height="48" alt="sass" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/gulp.svg" alt="gulp" />
+                <img class="stack__img" src="./img/gulp.svg" width="48p" height="48p" alt="gulp" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/vuejs-dark.svg" alt="vue" />
+                <img class="stack__img" src="./img/vuejs-dark.svg" width="" height="48" alt="vue" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/git.svg" alt="git" />
+                <img class="stack__img" src="./img/git.svg" width="48" height="48" alt="git" />
               </span>
             </div>
             <div class="stack__item">
               <span class="icon">
-                <img class="stack__img" src="./img/figma-dark.svg" alt="figma" />
+                <img class="stack__img" src="./img/figma-dark.svg" width="48" height="48" alt="figma" />
               </span>
             </div>
           </div>
@@ -158,11 +164,10 @@
                 <picture>
                   <source srcset="./img/pic1@2x.webp 2x, ./img/pic1.webp 1x" type="image/webp" />
                   <source srcset="./img/pic1@2x.png 2x, ./img/pic1.png 1x" type="image/png" />
-                  <img class="projects__img" src="./img/pic1.png" alt="проект 1" />
+                  <img class="projects__img" src="./img/pic1.png" width="366" height="235" alt="проект 1" />
                 </picture>
 
-              </div>
-              <div class="projects-desc">
+                </ <div class="projects-desc">
                 <p class="projects-desc__title">VUE SNeakers</p>
                 <span class="icon">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -181,7 +186,7 @@
                 <picture>
                   <source srcset="./img/pic7@2x.webp 2x, ./img/pic7.webp 1x" type="image/webp" />
                   <source srcset="./img/pic7@2x.png 2x, ./img/pic7.png 1x" type="image/png" />
-                  <img class="projects__img" src="./img/pic7.png" alt="проект 2" />
+                  <img class="projects__img" src="./img/pic7.png" width="366" height="235" alt="проект 2" />
                 </picture>
               </div>
               <div class="projects-desc">
@@ -202,7 +207,7 @@
                 <picture>
                   <source srcset="./img/pic3@2x.webp 2x, ./img/pic3.webp 1x" type="image/webp" />
                   <source srcset="./img/pic3@2x.png 2x, ./img/pic3.png 1x" type="image/png" />
-                  <img class="projects__img" src="./img/pic3.png" alt="проект 3" />
+                  <img class="projects__img" src="./img/pic3.png" width="366" height="235" alt="проект 3" />
                 </picture>
               </div>
               <div class="projects-desc">
@@ -223,7 +228,7 @@
                 <picture>
                   <source srcset="./img/pic5@2x.webp 2x, ./img/pic5.webp 1x" type="image/webp" />
                   <source srcset="./img/pic5@2x.png 2x, ./img/pic5.png 1x" type="image/png" />
-                  <img class="projects__img" src="./img/pic5.png" alt="проект 4" />
+                  <img class="projects__img" src="./img/pic5.png" width="366" height="235" alt="проект 4" />
                 </picture>
               </div>
               <div class="projects-desc">
@@ -250,36 +255,38 @@
             <div class="experience-item">
               <div class="experience-item__desc">
                 <span class="icon">
-                  <img class="experience-item__img" src="./img/laptop.svg" alt="иконка дизайна" />
+                  <img class="experience-item__img" src="./img/laptop.svg" width="48" height="48"
+                    alt="иконка компьютера" />
                 </span>
-                <h3 class="experience-item__title">
+                <h3 class="experience-item__tit
                   Разработка Telegram мини-приложения
                 </h3>
               </div>
-              <p class="experience-item__text">
-                Работал над созданием мини-приложения для Telegram, в которое
-                был интегрирован обучающий курс. В процессе разработки
-                занимался реализацией функционала и обеспечением удобного
-                взаимодействия пользователя с приложением.
-              </p>
-            </div>
-            <div class="experience-item">
-              <div class="experience-item__desc">
-                <span class="icon">
-                  <img class="experience-item__img" src="./img/design-ideas-16.svg" alt="иконка дизайна" />
-                </span>
-                <h3 class="experience-item__title">Верстка</h3>
+              <p class=" experience-item__text">
+                  Работал над созданием мини-приложения для Telegram, в которое
+                  был интегрирован обучающий курс. В процессе разработки
+                  занимался реализацией функционала и обеспечением удобного
+                  взаимодействия пользователя с приложением.
+                  </p>
               </div>
-              <p class="experience-item__text">
-                Имею опыт верстки профессиональных сайтов с акцентом на
-                качество и адаптивность. В рамках проектов занимался
-                реализацией кроссбраузерной верстки, оптимизацией скорости
-                загрузки страниц и адаптацией под мобильные устройства.
-              </p>
+              <div class="experience-item">
+                <div class="experience-item__desc">
+                  <span class="icon">
+                    <img class="experience-item__img" src="./img/design-ideas-16.svg" width="48" height="48"
+                      alt="иконка дизайна" />
+                  </span>
+                  <h3 class="experience-item__title">Верстка</h3>
+                </div>
+                <p class="experience-item__text">
+                  Имею опыт верстки профессиональных сайтов с акцентом на
+                  качество и адаптивность. В рамках проектов занимался
+                  реализацией кроссбраузерной верстки, оптимизацией скорости
+                  загрузки страниц и адаптацией под мобильные устройства.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="contact" id="contacts">

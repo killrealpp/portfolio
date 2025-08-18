@@ -5,16 +5,12 @@ const CONFIG = {
   BURGER_BTN: ".burger",
   MENU: ".menu"
 }
-
 export const headerScroll = () => {
   let lastScroll = 0;
   const header = document.querySelector(`${CONFIG.HEADER_CLASS}`);
-
   if (!header) return;
-
   window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
-
     if (Math.abs(currentScroll - lastScroll) < CONFIG.SCROLL_HOLD) {
       return;
     }
@@ -44,7 +40,6 @@ export const sectionScroll = () => {
     })
   })
 }
-
 export const openMenu = ()=>{
   const btn = document.querySelector(`${CONFIG.BURGER_BTN}`)
   const menu = document.querySelector(`${CONFIG.MENU}`)
@@ -55,7 +50,6 @@ export const openMenu = ()=>{
     menu.classList.toggle('open')
     btn.classList.toggle('active')
   })
-
   if (menuItems){
     menuItems.forEach((item)=>{
       item.addEventListener('click', ()=>{
@@ -64,7 +58,6 @@ export const openMenu = ()=>{
       })
     })
   }
-
   document.addEventListener('click', (e)=>{
     const isClickInside = menu.contains(e.target) || btn.contains(e.target)
      if (!isClickInside && menu.classList.contains("open")) {
