@@ -352,6 +352,7 @@ body {
   transition: all 0.3s ease;
   border-radius: 18px;
   overflow: hidden;
+  height: 100%;
 }
 
 .projects__item:hover {
@@ -377,10 +378,13 @@ body {
   transition: transform 0.3s ease;
 }
 
-.projects__img {
-  max-width: 390px;
+.projects__item-img {
   width: 100%;
-  max-height: 235px;
+  height: 235px;
+}
+
+.projects__img{
+  width: 100%;
   height: 100%;
 }
 
@@ -510,7 +514,7 @@ body {
   text-decoration: none;
 }
 
-.burger{
+.burger {
   border: none;
   outline: none;
   background: none;
@@ -519,67 +523,134 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .burger::before,
 .burger::after,
-.burger span{
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: 0.3s;
+.burger span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
 }
 
-.burger::before{
-    content: '';
-    top: 0;
+.burger::before {
+  content: '';
+  left: 0;
+  top: 0;
 }
 
-.burger::after{
-    content: '';
-    bottom: 0;
+.burger::after {
+  content: '';
+  left: 0;
+  bottom: 0;
 }
 
-.burger span{
-    top: 15px;
-} */
-
-.burger.active::before{
-    rotate: 45deg;
-    top: 12px;
+.burger span {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.burger.active::after{
-    rotate: -45deg;
-    bottom: 10px;
+.burger.active::before {
+  rotate: 45deg;
+  top: 16px;
 }
 
-.burger.active span{
-    rotate: 45deg;
-    top: 16px;
+.burger.active::after {
+  rotate: -45deg;
+  bottom: 10px;
 }
 
-.menu.open{
+.burger.active span {
+  opacity: 0;
+}
+
+.menu.open {
   top: 85px;
+  right: 0;
 }
 
-@media (max-width: 700px){
-  .burger{
+@media (max-width: 700px) {
+  .burger {
     display: block;
+    z-index: 10;
   }
 
-  .menu{
+  .menu {
     position: fixed;
-    top: -100%;
-    right: 0;
+    top: 0;
+    right: -100%;
     width: 100%;
+    border-radius: 10px;
     background-color: var(--accent-color);
     padding: 25px;
     transition: all 0.5s ease;
   }
 
-  .menu__list{
+  .menu__list {
     flex-direction: column;
+  }
+
+  .theme__btn {
+    z-index: 10;
+    font-size: 0;
+    border: 2px solid;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-right: 10px;
+  }
+
+  .theme__btn {
+    background-image: url("./img/moon.svg");
+    background-color: var(--text-color);
+  }
+
+  body.light-theme .theme__btn {
+    background-image: url("./img/sun.svg");
+    background-color: var(--accent-color);
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .iam__btns {
+    flex-direction: column;
+  }
+
+  .iam__title {
+    font-size: 54px;
+  }
+
+  .iam__text {
+    font-size: 16px;
+  }
+
+  .iam__btn {
+    width: 230px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .stack__text {
+    font-size: 16px;
+  }
+
+  .projects__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects-desc__title {
+    font-size: 16px;
   }
 }
