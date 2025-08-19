@@ -479,32 +479,14 @@ body {
   gap: 10px;
 }
 
-.contact__mail,
-.contact__tg,
-.contact__git,
-.contact__phone {
+.contact__network{
   display: flex;
   align-items: center;
   gap: 15px;
   cursor: pointer;
 }
 
-.contact__git svg {
-  width: 24px;
-  height: 24px;
-}
-
-.contact__mail svg {
-  width: 24px;
-  height: 24px;
-}
-
-.contact__tg svg {
-  width: 24px;
-  height: 24px;
-}
-
-.contact__phone svg {
+.contact__network svg {
   width: 24px;
   height: 24px;
 }
